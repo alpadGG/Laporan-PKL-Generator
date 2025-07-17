@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan pkl semi otonom</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+</head>
+<body>
+    <h1 class="text-center text-primary">laporan pkl generator</h1>
+
+    <div class="container mt-5">
+        <form id="laporanForm">
+            <div class="mb-3">
+                <label for="shift" class="form-label">pilih laporan</label>
+                <select class="form-select" id="shift" required>
+                    <option value="siang">pagi</option>
+                    <option value="sore">siang</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Tanggal</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="mb-3">
+                <label for="currentWork" class="form-label">Pekerjaan saya hari ini</label>
+                <textarea class="form-control w-80 h-100" id="currentWork" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="nextWork" class="form-label">Pekerjaan selanjutnya</label>
+                <textarea class="form-control w-80 h-100" id="nextWork" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="kendala" class="form-label">Kendala</label>
+                <textarea class="form-control w-80 h-100" id="kendala" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="container mt-5" id="hasil">
+
+    </div>
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
